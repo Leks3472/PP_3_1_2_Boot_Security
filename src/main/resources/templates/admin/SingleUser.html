@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональная страница пользователя</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <td th:text="${user.getId()}">Value</td>
+    <td th:text="${user.getName()}">Value</td>
+    <td th:text="${user.getAge()}">Value</td>
+    <td th:text="${user.getEmail()}">Value</td>
+    <td th:text="${user.getPassword()}">Value</td>
+
+    </tbody>
+</table>
+
+
+</form>
+</body>
+</html>
