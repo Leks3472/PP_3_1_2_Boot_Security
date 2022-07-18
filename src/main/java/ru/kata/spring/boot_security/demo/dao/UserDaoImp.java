@@ -23,7 +23,7 @@ public class UserDaoImp implements UserDao{
     }
 
     @Override
-    public User show(int id) {
+    public User show(long id) {
 
         return entityManager.find(User.class, id);
     }
@@ -46,7 +46,7 @@ public class UserDaoImp implements UserDao{
 
     @Transactional
     @Override
-    public void delete(int id) {
+    public void delete(long id) {
 
         entityManager.remove(show(id));
     }

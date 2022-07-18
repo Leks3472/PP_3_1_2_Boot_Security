@@ -19,9 +19,9 @@ public class UserController {
         this.userService = userService;
     }
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") long id, Model model) {
         model.addAttribute("user", userService.show(id));
-        return "admin/SingleUser";
+        return "user/SingleUser";
     }
 }
 
